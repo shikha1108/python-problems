@@ -42,7 +42,7 @@ else:
     print("modulo Failed") 
 
 
-# If it does not rain and I have money then I will go for a movie.
+#If it does not rain and I have money then I will go for a movie.
 # no rain -> True
 # have money -> True
 # watch movie -> True
@@ -61,6 +61,8 @@ else:
 
 #True and True = True
 
+#opretors work on operands, (bool1,bool2 are operands) 
+
 def anding(bool1, bool2):
     result = bool1 and bool2
     return result
@@ -69,4 +71,22 @@ if (anding(True, True) == True):
     print("anding Passed")
 else:
     print("anding Failed") 
+    
+def oring(bool1,bool2):
+    result = bool1 or bool2
+    return result
 
+if(oring(False, False) == True):
+    print("oring passed")
+else:
+    print("oring failed")
+    
+def negation(bool1):
+    result = not bool1
+    return result
+
+if(negation(False) == True):
+    print("negation passed")
+else:
+    print("negation failed")
+    
